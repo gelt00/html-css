@@ -1,0 +1,262 @@
+/* ==========================
+   1. RESET Y ESTILO GLOBAL
+========================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff8f0;
+  color: #333;
+  font-size: 16px;
+}
+
+h1, h2 {
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ==========================
+   2. LAYOUT GENERAL
+========================== */
+section {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;  
+  margin-bottom: 1rem;
+}
+
+/* ==========================
+   3. COMPONENTES COMUNES
+========================== */
+.btn-descarga,
+#login button,
+.social-buttons a {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-descarga {
+  background-color: #444;
+  color: white;
+}
+
+.btn-descarga:hover {
+  background-color: #222;
+}
+
+.social-buttons a {
+  color: white;
+  margin: 0 0.5rem;
+}
+
+/* Botones sociales */
+.btn-facebook { background-color: #3b5998; }
+.btn-google   { background-color: #db4437; }
+.btn-x        { background-color: #000; }
+
+/* ==========================
+   4. HEADER / NAV
+========================== */
+header {
+  background-color: #5d3a00;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav a {
+  color: white;
+}
+
+/* ==========================
+   5. FOOTER
+========================== */
+footer {
+  background-color: #eee;
+  color: #555;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* ==========================
+   6. LISTAS
+========================== */
+ul {
+  list-style-type: square;
+  color: #5d3a00;
+}
+
+/* ==========================
+   7. PÁGINA: CONTACTO
+========================== */
+#contacto .mapa-img {
+  width: 30%;
+  margin: 0 auto;
+}
+
+#contacto form {
+  margin-top: 1.5rem;
+}
+
+#contacto input,
+#contacto textarea {
+  width: 100%;
+  max-width: 400px;
+  margin: 0.2rem auto 1rem;
+  padding: 0.5rem;
+  display: block;
+}
+
+#contacto button {
+  padding: 0.6rem 1.2rem;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ==========================
+   8. PÁGINA: LOGIN
+========================== */
+#login {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.login-img {
+  margin: 1rem auto;
+  width: 30%;
+}
+
+/* ==========================
+   9. PÁGINA: MENÚ
+========================== */
+#menu {
+  padding: 2rem;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+#menu h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.galeria-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.menu-img {
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.menu-img:hover {
+  transform: scale(1.05);
+}
+
+.descargar-menu {
+  margin-top: 1rem;
+}
+
+/* ==========================
+   10. PÁGINA: NOSOTROS
+========================== */
+#nosotros {
+  padding: 2rem;
+  background-color: #fefefe;
+}
+
+.nosotros-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  text-align: left;
+}
+
+.nosotros-texto {
+  flex: 1;
+  min-width: 250px;
+}
+
+.nosotros-texto h2 {
+  font-size: 2rem;
+}
+
+.nosotros-imagen {
+  flex: 1;
+  min-width: 250px;
+  text-align: right;
+}
+
+.nosotros-imagen img {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.nosotros-detalle {
+  margin-top: 2rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
