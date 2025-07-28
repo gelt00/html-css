@@ -1,0 +1,57 @@
+// components/_menu.scss
+@use '../abstracts/variables' as vars;
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: vars.$spacer * 1.5;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+
+  li {
+    position: relative;
+
+    a {
+      color: vars.$accent-yellow;
+      font-weight: 500;
+      text-decoration: none;
+      padding: vars.$spacer * 0.5 vars.$spacer;
+      border-radius: 0.3rem;
+      font-size: 1rem;
+      letter-spacing: 0.5px;
+      transition: vars.$transition-fast;
+
+      // Animación de subrayado elegante
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        width: 0;
+        height: 2px;
+        background-color: vars.$accent;
+        transition: width 0.3s ease;
+      }
+
+      &:hover {
+        color: vars.$accent;
+        background: rgba(255, 255, 255, 0.05);
+
+        &::after {
+          width: 100%;
+        }
+      }
+
+      &.active {
+        color: vars.$accent;
+        font-weight: 600;
+
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+// base/_typography.scss
+@use '../abstracts/variables' as vars;
+
+body {
+  font-family: vars.$font-base;
+  font-size: vars.$font-size-base;
+  line-height: vars.$line-height;
+  color: vars.$gray-dark;
+  background: vars.$gray-light;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: vars.$font-base;
+  margin-bottom: vars.$spacer;
+}

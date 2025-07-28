@@ -1,0 +1,28 @@
+// pages/_contacto.scss
+@use '../abstracts/variables' as vars;
+@use '../abstracts/animations';
+
+.contacto {
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: vars.$spacer;
+
+    input, textarea {
+      border: 1px solid vars.$gray-dark;
+      padding: vars.$spacer * 0.5;
+      border-radius: 0.25rem;
+      transition: vars.$transition-fast;
+
+      &:focus {
+        outline: none;
+        border-color: vars.$brand-primary;
+        box-shadow: 0 0 0 3px rgba(vars.$brand-primary, 0.2);
+      }
+    }
+
+    button {
+      @extend .btn !optional;
+    }
+  }
+}

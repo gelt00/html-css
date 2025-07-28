@@ -1,0 +1,10 @@
+// layout/_footer.scss
+@use '../abstracts/variables' as vars;
+
+.footer {
+  background: vars.$gray-dark;
+  color: white;
+  padding: vars.$spacer;
+  text-align: center;
+  font-size: 0.9rem;
+}

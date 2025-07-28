@@ -1,0 +1,9 @@
+// pages/_nosotros.scss
+@use '../abstracts/variables' as vars;
+@use '../abstracts/animations';
+
+.nosotros {
+  padding: vars.$spacer * 2 0;
+  background: vars.$gray-light;
+  animation: fadeInUp 0.6s ease-out both;
+}

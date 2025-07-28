@@ -1,0 +1,9 @@
+// pages/_especialidades.scss
+@use '../abstracts/mixins' as mixins;
+@use '../abstracts/variables' as vars;
+@use '../abstracts/animations';
+
+.especialidades {
+  @include mixins.responsive-font(1.5rem, 2rem);
+  animation: fadeInUp 0.6s ease-out both;
+}
