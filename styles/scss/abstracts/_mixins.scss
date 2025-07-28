@@ -1,21 +1,16 @@
-// abstracts/_mixins.scss 
 @use './variables' as *;
 
-
-// Centrar con flexbox
 @mixin flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-// Tipografía
 @mixin responsive-font($min, $max, $fallback: $min) {
-  font-size: $fallback; 
+  font-size: $fallback;
   font-size: clamp($min, 2.5vw, $max);
 }
 
-// Media queries semánticas
 @mixin respond-to($breakpoint) {
   @if $breakpoint == sm {
     @media (min-width: $breakpoint-sm) { @content; }
@@ -27,3 +22,8 @@
     @media (min-width: $breakpoint-xl) { @content; }
   }
 }
+
+@mixin mobile   { @include respond-to(sm) { @content; } }
+@mixin tablet   { @include respond-to(md) { @content; } }
+@mixin desktop  { @include respond-to(lg) { @content; } }
+@mixin widescreen { @include respond-to(xl) { @content; } }

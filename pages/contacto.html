@@ -68,15 +68,19 @@
     </header>
 
     <main class="container my-5">
-      <section id="contacto">
-        <div class="row g-4">
-          <div class="col-12 col-md-5 d-flex flex-column align-items-center">
-            <p class="lead text-center">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit, debitis,
-              omnis temporibus repellendus magni doloremque quaerat? Ullam,
-              perspiciatis quos.
+      <section id="contacto" class="contacto">
+        <div class="row g-4 align-items-center">
+          <!-- Texto + mapa -->
+          <div
+            class="col-12 col-md-5 d-flex flex-column align-items-center text-center"
+          >
+            <h2 class="fw-bold mb-3">Contáctanos</h2>
+            <p class="lead">
+              En <strong>Pausa y Café</strong> estamos listos para escucharte.
+              Ya sea que quieras reservar, conocer más de nuestro menú o
+              simplemente saludarnos, completa el formulario o visítanos en
+              nuestra ubicación.
             </p>
-
             <img
               src="../img/mapa.jpg"
               alt="Ubicación en mapa"
@@ -84,10 +88,18 @@
             />
           </div>
 
+          <!-- Formulario -->
           <div class="col-12 col-md-7">
-            <form action="#" method="post" class="needs-validation" novalidate>
+            <form
+              action="#"
+              method="post"
+              class="needs-validation bg-white shadow-sm p-4 rounded"
+              novalidate
+            >
               <div class="mb-3">
-                <label for="nombre" class="form-label">Nombre:</label>
+                <label for="nombre" class="form-label fw-semibold"
+                  >Nombre</label
+                >
                 <input
                   type="text"
                   class="form-control"
@@ -99,8 +111,8 @@
               </div>
 
               <div class="mb-3">
-                <label for="correo" class="form-label"
-                  >Correo electrónico:</label
+                <label for="correo" class="form-label fw-semibold"
+                  >Correo electrónico</label
                 >
                 <input
                   type="email"
@@ -115,7 +127,9 @@
               </div>
 
               <div class="mb-3">
-                <label for="telefono" class="form-label">Teléfono:</label>
+                <label for="telefono" class="form-label fw-semibold"
+                  >Teléfono</label
+                >
                 <input
                   type="tel"
                   class="form-control"
@@ -125,8 +139,8 @@
               </div>
 
               <div class="mb-3">
-                <label for="mensaje" class="form-label"
-                  >Mensaje adicional:</label
+                <label for="mensaje" class="form-label fw-semibold"
+                  >Mensaje adicional</label
                 >
                 <textarea
                   id="mensaje"
@@ -137,22 +151,23 @@
                 ></textarea>
               </div>
 
-              <div class="mb-3">
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="checkDefault"
-                  />
-                  <label class="form-check-label" for="checkDefault"
-                    >Aviso de privacidad</label
-                  >
+              <div class="mb-3 form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="checkDefault"
+                  required
+                />
+                <label class="form-check-label" for="checkDefault">
+                  Acepto el aviso de privacidad
+                </label>
+                <div class="invalid-feedback">
+                  Debes aceptar el aviso de privacidad.
                 </div>
               </div>
 
-              <button type="submit" class="btn btn-custom-contacto">
-                Enviar
+              <button type="submit" class="btn btn-contacto w-100">
+                Enviar Mensaje
               </button>
             </form>
           </div>

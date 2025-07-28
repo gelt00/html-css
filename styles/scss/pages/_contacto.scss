@@ -1,28 +1,58 @@
 // pages/_contacto.scss
-@use '../abstracts/variables' as vars;
-@use '../abstracts/animations';
+@use "../abstracts/variables" as vars;
+@use "sass:color";
 
 .contacto {
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: vars.$spacer;
+  h2 {
+    font-size: 2rem;
+    margin-bottom: vars.$spacer;
+  }
 
-    input, textarea {
-      border: 1px solid vars.$gray-dark;
+  p.lead {
+    font-size: 1.1rem;
+    color: vars.$gray-dark;
+    line-height: 1.7;
+    margin-bottom: vars.$spacer * 1.5;
+  }
+
+  form {
+    background: #fff;
+    border-radius: 0.75rem;
+    padding: vars.$spacer * 2;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+    .form-label {
+      font-weight: 600;
+      color: vars.$gray-dark;
+    }
+
+    input,
+    textarea {
+      border: 1px solid color.adjust(vars.$gray-dark, $lightness: 20%);
       padding: vars.$spacer * 0.5;
-      border-radius: 0.25rem;
-      transition: vars.$transition-fast;
+      border-radius: 0.5rem;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
 
       &:focus {
-        outline: none;
         border-color: vars.$brand-primary;
         box-shadow: 0 0 0 3px rgba(vars.$brand-primary, 0.2);
+        outline: none;
       }
     }
 
-    button {
-      @extend .btn !optional;
+    .form-check-input:checked {
+      background-color: vars.$brand-primary;
+      border-color: vars.$brand-primary;
+    }
+
+    .btn-contacto {
+      width: 100%;
+      font-weight: 600;
+
+      &:hover {
+        background: color.adjust(vars.$brand-primary, $lightness: -8%);
+        transform: translateY(-2px);
+      }
     }
   }
 }
