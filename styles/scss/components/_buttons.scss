@@ -13,9 +13,12 @@
   transition: vars.$transition-fast;
   position: relative;
   overflow: hidden;
+  display: inline-block;
+  z-index: 1;
 
   &:hover {
     background: vars.$brand-secondary;
+    color: white;
   }
 
   &::after {
@@ -28,6 +31,7 @@
     transform: translate(-50%, -50%);
     opacity: 0;
     transition: width 0.4s ease-out, height 0.4s ease-out, opacity 0.4s ease-out;
+    z-index: 0;
   }
   &:active::after {
     width: 200%; height: 200%;
