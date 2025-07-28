@@ -1,5 +1,5 @@
 // pages/_nosotros.scss
-@use '../abstracts/variables' as vars;
+@use "../abstracts/variables" as vars;
 
 .nosotros {
   h2 {
@@ -55,50 +55,49 @@
     }
   }
 
-.gallery {
-  .img-box {
-    position: relative;
-    overflow: hidden;
-    border-radius: 0.75rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    height: clamp(220px, 25vw, 350px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-      transition: transform 0.4s ease;
-      display: block;
-    }
-
-    .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.4);
-      color: #fff;
+  .gallery {
+    .img-box {
+      position: relative;
+      overflow: hidden;
+      border-radius: 0.75rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      height: clamp(220px, 25vw, 350px);
       display: flex;
-      justify-content: center;
       align-items: center;
-      opacity: 0;
-      transition: opacity 0.4s ease;
-      font-size: 1.2rem;
-      font-weight: 600;
-    }
+      justify-content: center;
 
-    &:hover img {
-      transform: scale(1.1);
-    }
+      img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        transition: transform 0.4s ease;
+        display: block;
+      }
 
-    &:hover .overlay {
-      opacity: 1;
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        font-size: 1.2rem;
+        font-weight: 600;
+      }
+
+      &:hover img {
+        transform: scale(1.1);
+      }
+
+      &:hover .overlay {
+        opacity: 1;
+      }
     }
   }
-}
-
 }
