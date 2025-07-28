@@ -1,0 +1,262 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #fff8f0;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: clamp(2rem, 3vw, 2.5rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+h3 {
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  color: #6f4e37;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease-in-out;
+}
+
+.texto-centrado {
+  text-align: center;
+}
+
+.centrar-bloque {
+  display: block;
+  margin: 0 auto;
+}
+
+.transicion-suave {
+  transition: all 0.3s ease-in-out;
+}
+
+ul {
+  list-style-type: square;
+  color: #6f4e37;
+}
+
+.btn-descarga,
+.btn-custom-contacto,
+.social-buttons a {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-descarga {
+  background-color: #6f4e37;
+  color: white;
+}
+.btn-descarga:hover {
+  background-color: #4a2f1a;
+  transform: translateY(-3px);
+}
+
+.btn-custom-contacto {
+  background-color: #6f4e37;
+  color: white;
+  border-radius: 0.4rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+.btn-custom-contacto:hover {
+  background-color: #4a2f1a;
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.btn-custom-contacto:active {
+  transform: scale(0.98);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.mi-navbar {
+  background-color: #6f4e37;
+  padding: 0.8rem 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.mi-navbar .nav-link {
+  color: white;
+  margin: 0 0.5rem;
+}
+.mi-navbar .nav-link:hover {
+  color: #e4ad08;
+}
+.mi-navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,...");
+}
+
+footer {
+  background-color: #6f4e37;
+  color: white;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+footer .redes-sociales a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+footer .redes-sociales a:hover {
+  transform: scale(1.1);
+  background-color: #e4ad08;
+}
+
+section {
+  padding: 2rem 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-logo {
+  height: 50px;
+  margin-top: 10px;
+}
+
+.img-centrada {
+  display: block;
+  margin: 0 auto;
+}
+
+.img-efecto {
+  opacity: 0;
+  animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+#contacto {
+  padding: 3rem 1rem;
+}
+#contacto form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+#contacto form input, #contacto form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease-in-out;
+}
+#contacto form input:focus, #contacto form textarea:focus {
+  border-color: #e4ad08;
+  box-shadow: 0 0 5px #e4ad08;
+}
+
+#especialidades-carousel {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  padding: 4rem 0;
+}
+#especialidades-carousel h2 {
+  color: #2c3e50;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  border-bottom: 4px solid #007bff;
+  display: inline-block;
+}
+#especialidades-carousel .card {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+#especialidades-carousel .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+#menu {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+#menu .galeria-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+#menu .menu-img {
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+#menu .menu-img:hover {
+  transform: scale(1.05);
+}
+
+#nosotros {
+  padding: 2rem;
+  background-color: #fefefe;
+}
+#nosotros .nosotros-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+@media (max-width: 768px) {
+  #nosotros .nosotros-contenido {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}
+#nosotros .nosotros-imagen img {
+  transition: transform 0.4s;
+}
+#nosotros .nosotros-imagen img:hover {
+  transform: scale(1.03);
+}
+#nosotros .nosotros-detalle {
+  background-color: #f8f6f3;
+  padding: 1.5rem;
+  border-left: 4px solid #e4ad08;
+  border-radius: 8px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

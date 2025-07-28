@@ -1,0 +1,23 @@
+footer {
+  background-color: $color-primario;
+  color: white;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+
+  .redes-sociales a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    transition: transform 0.3s, background-color 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+      background-color: $color-acento;
+    }
+  }
+}

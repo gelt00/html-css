@@ -1,0 +1,15 @@
+.mi-navbar {
+  background-color: $color-primario;
+  padding: 0.8rem 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+  .nav-link {
+    color: white;
+    margin: 0 0.5rem;
+    &:hover { color: $color-acento; }
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,...");
+  }
+}

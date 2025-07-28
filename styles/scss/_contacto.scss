@@ -1,0 +1,21 @@
+#contacto {
+  padding: 3rem 1rem;
+
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    input, textarea {
+      width: 100%;
+      padding: 0.6rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      transition: $transition;
+
+      &:focus {
+        border-color: $color-acento;
+        box-shadow: 0 0 5px $color-acento;
+      }
+    }
+  }
+}
