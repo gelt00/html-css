@@ -21,7 +21,7 @@ body {
   font-size: 1rem;
   line-height: 1.6;
   color: #2e2e2e;
-  background: #f0f3e9;
+  background: #f2f2f2;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -192,9 +192,57 @@ h1, h2, h3, h4, h5, h6 {
 .footer {
   background: #2e2e2e;
   color: white;
-  padding: 1rem;
-  text-align: center;
-  font-size: 0.9rem;
+  position: relative;
+  padding: 2rem 0;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.4);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer p {
+  margin: 0;
+  font-size: clamp(0.8rem, 2vw + 0.2rem, 1rem);
+}
+.footer .redes-sociales {
+  position: absolute;
+  top: -1.75rem;
+  right: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+.footer .redes-sociales a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, background 0.3s;
+}
+.footer .redes-sociales a svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.footer .redes-sociales a:hover {
+  transform: translateY(-4px) scale(1.1);
+  background: #949494;
+}
+@media (min-width: 576px) {
+  .footer .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer .redes-sociales {
+    position: static;
+    margin-top: 1rem;
+  }
 }
 
 .btn {
@@ -311,6 +359,45 @@ h1, h2, h3, h4, h5, h6 {
   color: #2e2e2e;
 }
 
+#carrousel {
+  background: #fdfdfd;
+}
+#carrousel h2 {
+  font-weight: 700;
+  color: #333;
+}
+#carrousel .carousel-inner .card {
+  border: none;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#carrousel .carousel-inner .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+#carrousel .carousel-inner .card img {
+  height: 250px;
+  object-fit: cover;
+}
+#carrousel .carousel-inner .card .card-body {
+  background: #fff;
+  padding: 2rem;
+}
+#carrousel .carousel-inner .card .card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #444;
+}
+#carrousel .carousel-inner .card .card-text {
+  font-size: 0.9rem;
+  color: #666;
+}
+#carrousel .carousel-control-prev-icon,
+#carrousel .carousel-control-next-icon {
+  filter: invert(1);
+}
+
 .especialidades {
   font-size: 1.5rem;
   font-size: clamp(1.5rem, 2.5vw, 2rem);
@@ -319,7 +406,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nosotros {
   padding: 2rem 0;
-  background: #f0f3e9;
+  background: #f2f2f2;
   animation: fadeInUp 0.6s ease-out both;
 }
 

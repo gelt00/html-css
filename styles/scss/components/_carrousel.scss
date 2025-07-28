@@ -1,0 +1,48 @@
+#carrousel {
+  background: #fdfdfd;
+
+  h2 {
+    font-weight: 700;
+    color: #333;
+  }
+
+  .carousel-inner {
+    .card {
+      border: none;
+      border-radius: 0.75rem;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      }
+
+      img {
+        height: 250px;
+        object-fit: cover;
+      }
+
+      .card-body {
+        background: #fff;
+        padding: 2rem;
+      }
+
+      .card-title {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #444;
+      }
+
+      .card-text {
+        font-size: 0.9rem;
+        color: #666;
+      }
+    }
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: invert(1);
+  }
+}
