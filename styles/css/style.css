@@ -192,7 +192,6 @@ h1, h2, h3, h4, h5, h6 {
 .footer {
   background: #2e2e2e;
   color: white;
-  position: relative;
   padding: 2rem 0;
   box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.4);
   border-top-left-radius: 1rem;
@@ -206,14 +205,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 .footer p {
   margin: 0;
-  font-size: clamp(0.8rem, 2vw + 0.2rem, 1rem);
+  font-size: clamp(0.9rem, 1.2vw, 1.1rem);
 }
 .footer .redes-sociales {
-  position: absolute;
-  top: -1.75rem;
-  right: 2rem;
   display: flex;
+  justify-content: center;
   gap: 1rem;
+  margin-top: 1rem;
 }
 .footer .redes-sociales a {
   display: flex;
@@ -232,16 +230,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 .footer .redes-sociales a:hover {
   transform: translateY(-4px) scale(1.1);
-  background: #949494;
+  background: rgb(174.8192771084, 126.7108433735, 93.1807228916);
 }
 @media (min-width: 576px) {
   .footer .container {
     flex-direction: column;
     text-align: center;
-  }
-  .footer .redes-sociales {
-    position: static;
-    margin-top: 1rem;
   }
 }
 
@@ -460,7 +454,7 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.nosotros .card-info h4 {
+.nosotros .card-info h3 {
   font-weight: 600;
   color: #6f4e37;
   margin-bottom: 0.75rem;
@@ -487,6 +481,7 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
   border-radius: 0.75rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  height: clamp(220px, 25vw, 350px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -524,12 +519,35 @@ h1, h2, h3, h4, h5, h6 {
 .contacto h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
+  text-align: center;
+  color: #2e2e2e;
 }
 .contacto p.lead {
   font-size: 1.1rem;
   color: #2e2e2e;
   line-height: 1.7;
   margin-bottom: 1.5rem;
+}
+.contacto iframe {
+  min-height: 420px;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+.contacto .contact-info {
+  background: #f2f2f2;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  font-size: 1rem;
+  text-align: center;
+}
+.contacto .contact-info h3 {
+  color: #6f4e37;
+  margin-bottom: 1rem;
+}
+.contacto .contact-info p {
+  margin: 0.25rem 0;
+  color: #2e2e2e;
 }
 .contacto form {
   background: #fff;
@@ -547,6 +565,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0.5rem;
   border-radius: 0.5rem;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 1rem;
 }
 .contacto form input:focus,
 .contacto form textarea:focus {
@@ -559,8 +578,12 @@ h1, h2, h3, h4, h5, h6 {
   border-color: #6f4e37;
 }
 .contacto form .btn-contacto {
-  width: 100%;
+  background: #6f4e37;
+  color: white;
   font-weight: 600;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  transition: transform 0.2s ease, background 0.3s ease;
 }
 .contacto form .btn-contacto:hover {
   background: rgb(83.7180722892, 58.8289156627, 41.4819277108);

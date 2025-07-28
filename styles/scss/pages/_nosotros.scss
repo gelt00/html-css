@@ -25,7 +25,7 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
-    h4 {
+    h3 {
       font-weight: 600;
       color: vars.$brand-primary;
       margin-bottom: 0.75rem;
@@ -61,7 +61,7 @@
     overflow: hidden;
     border-radius: 0.75rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-
+    height: clamp(220px, 25vw, 350px);
     display: flex;
     align-items: center;
     justify-content: center;
