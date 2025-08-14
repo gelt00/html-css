@@ -11,6 +11,27 @@
     height: auto;
     display: block;
   }
+
+   blockquote {
+    background: $bg-color;
+    padding: $spacing-unit * 1.5;
+    border-left: 5px solid #3019db;
+    border-radius: 8px;
+    font-style: italic;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+    p {
+      margin-bottom: 0.5rem;
+    }
+
+    cite {
+      display: block;
+      text-align: right;
+      font-weight: bold;
+      color: #555;
+      font-style: normal;
+    }
+  }
 }
 
 h1 {
