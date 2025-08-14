@@ -82,6 +82,56 @@ h3 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
+header .navbar {
+  background-color: #2c3e50;
+}
+header .navbar .navbar-brand img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  display: block;
+}
+header .navbar .navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  gap: 1rem;
+}
+header .navbar .nav-link {
+  color: #ffffff;
+  font-weight: 450;
+}
+header .navbar .nav-link:hover, header .navbar .nav-link.active {
+  color: #18bc9c;
+}
+
+footer {
+  background-color: #2c3e50;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+}
+footer .redes-sociales {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+footer .redes-sociales a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+footer .redes-sociales a:hover {
+  transform: scale(1.2);
+}
+footer .redes-sociales a svg {
+  display: block;
+}
+
 .menuCarouselClass .carousel-inner {
   overflow: visible;
 }
@@ -165,54 +215,37 @@ h3 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-header .navbar {
-  background-color: #2c3e50;
-}
-header .navbar .navbar-brand img {
-  width: 100px;
-  height: 100px;
-  object-fit: contain;
-  display: block;
-}
-header .navbar .navbar-nav {
+.contacto-info {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex: 1;
-  gap: 1rem;
-}
-header .navbar .nav-link {
-  color: #ffffff;
-  font-weight: 450;
-}
-header .navbar .nav-link:hover, header .navbar .nav-link.active {
-  color: #18bc9c;
 }
 
-footer {
-  background-color: #2c3e50;
-  color: #ffffff;
-  text-align: center;
-  padding: 1rem;
+.mapa-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  overflow: hidden;
 }
-footer .redes-sociales {
-  margin-top: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
+.mapa-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
-footer .redes-sociales a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: transform 0.2s ease;
+
+.form-contacto {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  padding: 1.5rem;
 }
-footer .redes-sociales a:hover {
-  transform: scale(1.2);
-}
-footer .redes-sociales a svg {
-  display: block;
+.form-contacto .form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(48, 25, 219, 0.25);
+  border-color: #3019db;
 }
 
 /*# sourceMappingURL=style.css.map */

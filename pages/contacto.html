@@ -67,118 +67,135 @@
       </nav>
     </header>
 
-    <main class="container my-5">
-      <section id="contacto" class="contacto">
-        <h2 class="fw-bold text-center mb-4">Contáctanos</h2>
-
-        <div
-          class="contact-info bg-light rounded shadow-sm p-4 mb-5 text-center"
-        >
-          <p>
-            <strong>📍 Dirección:</strong> Calle del Café 123, Cuernavaca,
-            México
-          </p>
-          <p><strong>📞 Teléfono:</strong> +52 55 1234 5678</p>
-          <p><strong>✉️ Correo:</strong> contacto@pausaycafe.com</p>
-          <p><strong>🕒 Horario:</strong> Lunes a Domingo, 8:00 - 20:00 hrs</p>
-        </div>
-
-        <div class="row g-4 align-items-start">
-          <div class="col-12 col-md-6">
-            <div class="ratio ratio-16x9 rounded shadow-sm">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6036407.229939325!2d-118.37588105994072!3d23.626033653858535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f92e78d90f3b%3A0xd80d0e0b9230e650!2sMéxico!5e0!3m2!1ses-419!2smx!4v1691777234567!5m2!1ses-419!2smx"
-                width="600"
-                height="450"
-                class="iframe-mapa"
-                allowfullscreen=""
-                title="Ubicación de Pausa y Café en el mapa"
-              >
-              </iframe>
+    <main>
+      <section class="seccion">
+        <div class="container">
+          <div class="row contacto-info">
+            <div class="col-12 col-md-6">
+              <h2>Contáctanos</h2>
+              <p>
+                <strong>📍 Dirección:</strong> Calle del Café 123, Cuernavaca,
+                México
+              </p>
+              <p><strong>📞 Teléfono:</strong> +52 55 1234 5678</p>
+              <p><strong>✉️ Correo:</strong> contacto@pausaycafe.com</p>
+              <p>
+                <strong>🕒 Horario:</strong> Lunes a Domingo, 8:00 - 20:00 hrs
+              </p>
             </div>
           </div>
-          <!-- Formulario -->
-          <div class="col-12 col-md-7">
-            <form
-              action="#"
-              method="post"
-              class="needs-validation bg-white shadow-sm p-4 rounded"
-              novalidate
-            >
-              <div class="mb-3">
-                <label for="nombre" class="form-label fw-semibold"
-                  >Nombre</label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  id="nombre"
-                  name="nombre"
-                  required
-                />
-                <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
-              </div>
 
-              <div class="mb-3">
-                <label for="correo" class="form-label fw-semibold"
-                  >Correo electrónico</label
+          <!-- Fila: mapa -->
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <div class="mapa-container">
+                <iframe
+                  class="iframe-mapa"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6036407.229939325!2d-118.37588105994072!3d23.626033653858535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f92e78d90f3b%3A0xd80d0e0b9230e650!2sMéxico!5e0!3m2!1ses-419!2smx!4v1691777234567!5m2!1ses-419!2smx"
+                  style="border: 0"
+                  allowfullscreen
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  title="Ubicación de Pausa y Café en el mapa"
                 >
-                <input
-                  type="email"
-                  class="form-control"
-                  id="correo"
-                  name="correo"
-                  required
-                />
-                <div class="invalid-feedback">
-                  Por favor ingresa un correo válido.
+                </iframe>
+              </div>
+            </div>
+
+            <!-- Formulario -->
+            <div class="col-12 col-md-6">
+              <form
+                action="#"
+                method="post"
+                class="needs-validation form-contacto"
+                novalidate
+              >
+                <div>
+                  <label for="nombre" class="form-label">Nombre</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nombre"
+                    name="nombre"
+                    autocomplete="name"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Por favor ingresa tu nombre.
+                  </div>
                 </div>
-              </div>
 
-              <div class="mb-3">
-                <label for="telefono" class="form-label fw-semibold"
-                  >Teléfono</label
-                >
-                <input
-                  type="tel"
-                  class="form-control"
-                  id="telefono"
-                  name="telefono"
-                />
-              </div>
-
-              <div class="mb-3">
-                <label for="mensaje" class="form-label fw-semibold"
-                  >Mensaje adicional</label
-                >
-                <textarea
-                  id="mensaje"
-                  name="mensaje"
-                  rows="4"
-                  class="form-control"
-                  placeholder="Escribe tu mensaje..."
-                ></textarea>
-              </div>
-
-              <div class="mb-3 form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  id="checkDefault"
-                  required
-                />
-                <label class="form-check-label" for="checkDefault">
-                  Acepto el aviso de privacidad
-                </label>
-                <div class="invalid-feedback">
-                  Debes aceptar el aviso de privacidad.
+                <div>
+                  <label for="correo" class="form-label"
+                    >Correo electrónico</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="correo"
+                    name="correo"
+                    autocomplete="email"
+                    inputmode="email"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Por favor ingresa un correo válido.
+                  </div>
                 </div>
-              </div>
 
-              <button type="submit" class="btn btn-contacto w-100">
-                Enviar Mensaje
-              </button>
-            </form>
+                <div>
+                  <label for="telefono" class="form-label">Teléfono</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="telefono"
+                    name="telefono"
+                    autocomplete="tel"
+                    inputmode="tel"
+                    pattern="[0-9+\s()-]{7,}"
+                    placeholder="+52 55 1234 5678"
+                  />
+                  <div class="invalid-feedback">
+                    Ingresa un teléfono válido.
+                  </div>
+                </div>
+
+                <div>
+                  <label for="mensaje" class="form-label"
+                    >Mensaje adicional</label
+                  >
+                  <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    rows="4"
+                    class="form-control"
+                    placeholder="Escribe tu mensaje..."
+                  ></textarea>
+                </div>
+
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="checkDefault"
+                    name="aviso_privacidad"
+                    value="aceptado"
+                    required
+                  />
+                  <label class="form-check-label" for="checkDefault">
+                    Acepto el
+                    <a href="/aviso-privacidad.html" class="link-primary"
+                      >aviso de privacidad</a
+                    >
+                  </label>
+                  <div class="invalid-feedback">
+                    Debes aceptar el aviso de privacidad.
+                  </div>
+                </div>
+
+                <button type="submit" class="boton">Enviar Mensaje</button>
+              </form>
+            </div>
           </div>
         </div>
       </section>
@@ -186,9 +203,7 @@
 
     <footer>
       <div>
-        <p>
-          © 2025 Pausa y Café. Todos los derechos reservados.
-        </p>
+        <p>© 2025 Pausa y Café. Todos los derechos reservados.</p>
 
         <div class="redes-sociales">
           <a
