@@ -76,33 +76,33 @@ h2 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-#menuCarousel .carousel-inner {
+.menuCarouselClass .carousel-inner {
   overflow: visible;
 }
-#menuCarousel .carousel-item {
+.menuCarouselClass .carousel-item {
   overflow: hidden;
 }
-#menuCarousel .carousel-item.active {
+.menuCarouselClass .carousel-item.active {
   overflow: visible;
 }
-#menuCarousel .row {
+.menuCarouselClass .row {
   align-items: stretch;
 }
-#menuCarousel .card {
+.menuCarouselClass .card {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   will-change: transform;
   height: 100%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
-#menuCarousel .card:hover {
+.menuCarouselClass .card:hover {
   transform: translateY(-10px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
-#menuCarousel .card:active {
+.menuCarouselClass .card:active {
   transform: translateY(0);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
-#menuCarousel .card-img-top {
+.menuCarouselClass .card-img-top {
   height: 350px;
   object-fit: cover;
   width: 100%;
