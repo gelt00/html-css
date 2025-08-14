@@ -6,14 +6,11 @@ footer {
 
   .redes-sociales {
     margin-top: $spacing-unit;
-    display: flex;
-    justify-content: center;
+    @include flex-center;
     gap: $spacing-unit;
 
     a {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
+      @include flex-center;
       transition: transform 0.2s ease;
 
       &:hover {

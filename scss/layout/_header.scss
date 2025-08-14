@@ -12,9 +12,9 @@ header {
     }
 
     .navbar-nav {
-      display: flex;
-      justify-content: center;
+      @include flex-center;
       flex: 1;
+      gap: $spacing-unit;
     }
 
 

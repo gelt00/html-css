@@ -11,10 +11,11 @@ body {
 }
 
 .seccion {
-  text-align: center;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  text-align: center;
+  flex-direction: column;
   padding: 1rem;
   padding-bottom: 2rem;
   gap: 1rem;
@@ -36,6 +37,25 @@ h2 {
   margin-bottom: 0.5rem;
 }
 
+.boton {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #05568c;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.boton:hover {
+  background-color: rgb(3.5931034483, 61.8013793103, 100.6068965517);
+  transform: translateY(-2px);
+}
+.boton:active {
+  transform: translateY(0);
+}
+
 header .navbar {
   background-color: #2c3e50;
 }
@@ -48,7 +68,9 @@ header .navbar .navbar-brand img {
 header .navbar .navbar-nav {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex: 1;
+  gap: 1rem;
 }
 header .navbar .nav-link {
   color: #ffffff;
@@ -68,12 +90,13 @@ footer .redes-sociales {
   margin-top: 1rem;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 1rem;
 }
 footer .redes-sociales a {
-  display: inline-flex;
-  align-items: center;
+  display: flex;
   justify-content: center;
+  align-items: center;
   transition: transform 0.2s ease;
 }
 footer .redes-sociales a:hover {
