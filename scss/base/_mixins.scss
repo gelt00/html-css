@@ -11,3 +11,17 @@
     font-size: $size * 0.9;
   }
 }
+
+@mixin levantar-hover($desplazamiento: -2px, $tiempo: 0.2s) {
+  transition: transform $tiempo ease, box-shadow $tiempo ease;
+  
+  &:hover {
+    transform: translateY($desplazamiento);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+}

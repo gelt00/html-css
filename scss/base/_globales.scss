@@ -48,20 +48,12 @@ h2 {
 .boton {
   display: inline-block;
   padding: 0.75rem 1.5rem;
+  margin-top: $spacing-unit;
   background-color: $boton-color;
   color: $text-color-white;
   font-weight: 600;
   text-decoration: none;
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-  transition: background-color 0.3s ease, transform 0.2s ease;
-
-  &:hover {
-    background-color: darken($boton-color, 8%);
-    transform: translateY(-2px);
-  }
-
-  &:active {
-    transform: translateY(0);
-  }
+  @include levantar-hover(-3px, 0.25s);
 }

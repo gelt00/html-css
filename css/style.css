@@ -58,20 +58,54 @@ h2 {
 .boton {
   display: inline-block;
   padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
   background-color: #05568c;
   color: #ffffff;
   font-weight: 600;
   text-decoration: none;
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 .boton:hover {
-  background-color: rgb(3.5931034483, 61.8013793103, 100.6068965517);
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 .boton:active {
   transform: translateY(0);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+#menuCarousel .carousel-inner {
+  overflow: visible;
+}
+#menuCarousel .carousel-item {
+  overflow: hidden;
+}
+#menuCarousel .carousel-item.active {
+  overflow: visible;
+}
+#menuCarousel .row {
+  align-items: stretch;
+}
+#menuCarousel .card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  will-change: transform;
+  height: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+#menuCarousel .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+#menuCarousel .card:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+#menuCarousel .card-img-top {
+  height: 350px;
+  object-fit: cover;
+  width: 100%;
 }
 
 header .navbar {
