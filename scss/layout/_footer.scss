@@ -1,0 +1,28 @@
+footer {
+  background-color: $primary-color;
+  color: $text-color-white;
+  text-align: center;
+  padding: $spacing-unit;
+
+  .redes-sociales {
+    margin-top: $spacing-unit;
+    display: flex;
+    justify-content: center;
+    gap: $spacing-unit;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.2s ease;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+
+      svg {
+        display: block;
+      }
+    }
+  }
+}

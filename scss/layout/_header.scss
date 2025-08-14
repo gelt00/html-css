@@ -1,0 +1,30 @@
+header {
+  .navbar {
+    background-color: $primary-color;
+
+    .navbar-brand {
+      img {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+        display: block;
+      }
+    }
+
+    .navbar-nav {
+      display: flex;
+      justify-content: center;
+      flex: 1;
+    }
+
+
+    .nav-link {
+      color: $text-color-white;
+      font-weight: 450;
+      &:hover,
+      &.active {
+        color: $secondary-color;
+      }
+    }
+  }
+}
