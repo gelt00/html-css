@@ -55,6 +55,12 @@ h2 {
   margin-bottom: 0.5rem;
 }
 
+h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
+  font-size: 1.25rem;
+}
+
 .boton {
   display: inline-block;
   padding: 0.75rem 1.5rem;
@@ -106,6 +112,57 @@ h2 {
   height: 350px;
   object-fit: cover;
   width: 100%;
+}
+
+.img-nosotros {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+.overlay-container {
+  position: relative;
+  overflow: hidden;
+}
+.overlay-container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 12px;
+}
+
+.stat-item {
+  padding: 1rem;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.stat-item:hover {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  will-change: transform;
+  height: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.stat-item:hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.stat-item:hover:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 header .navbar {

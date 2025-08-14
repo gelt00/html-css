@@ -67,104 +67,110 @@
     </header>
 
     <main>
-      <section id="nosotros" class="nosotros container py-5">
-        <div class="row align-items-center mb-5">
-          <div class="col-md-6">
-            <h2 class="fw-bold mb-4">Sobre Nosotros</h2>
-            <p class="lead">
+      <section class="seccion">
+        <div class="row">
+          <div class="col-md-4 offset-md-2">
+            <h2>Sobre Nosotros</h2>
+            <p>
               En <strong>Pausa y Café</strong> creemos que cada taza cuenta una
               historia. Desde nuestros inicios, nos hemos dedicado a ofrecer un
               espacio acogedor donde los sabores, la calidad y la hospitalidad
               se unen para crear experiencias inolvidables.
             </p>
           </div>
-          <div class="col-md-6 text-center">
-            <img
-              src="../img/recuerdos.jpg"
-              alt="Recuerdo especial del lugar"
-              class="img-fluid rounded shadow-lg"
-            />
+          <div class="col-md-4">
+            <img src="../img/recuerdos.jpg" alt="Recuerdo especial del lugar" />
           </div>
         </div>
 
-        <div class="row text-center my-5">
+        <div class="row">
           <div class="col-md-4">
-            <div class="p-4 shadow-sm bg-light rounded">
-              <h3 class="fw-bold">Misión</h3>
+            <blockquote>
+              <h2>Misión</h2>
               <p>
                 Ofrecer momentos únicos con café de calidad y platillos
                 elaborados con pasión y frescura.
               </p>
-            </div>
+            </blockquote>
           </div>
           <div class="col-md-4">
-            <div class="p-4 shadow-sm bg-light rounded">
-              <h3 class="fw-bold">Visión</h3>
+            <blockquote>
+              <h2>Visión</h2>
               <p>
                 Ser el lugar preferido de quienes buscan un espacio para
                 disfrutar, relajarse y compartir.
               </p>
-            </div>
+            </blockquote>
           </div>
           <div class="col-md-4">
-            <div class="p-4 shadow-sm bg-light rounded">
-              <h3 class="fw-bold">Valores</h3>
+            <blockquote>
+              <h2>Valores</h2>
               <p>
                 Calidez, calidad, compromiso y pasión por lo que hacemos,
                 siempre con una sonrisa para ti.
               </p>
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-6">
+            <div class="stat-item">
+              <h2>+10</h2>
+              <p>Años de experiencia</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="stat-item">
+              <h2>+50</h2>
+              <p>Platillos en el menú</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="stat-item">
+              <h2>+5000</h2>
+              <p>Clientes felices</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="stat-item">
+              <h2>100%</h2>
+              <p>Ingredientes frescos</p>
             </div>
           </div>
         </div>
 
-        <div class="row text-center my-5">
-          <div class="col-6 col-md-3">
-            <h3 class="fw-bold text-primary">+10</h3>
-            <p>Años de experiencia</p>
-          </div>
-          <div class="col-6 col-md-3">
-            <h3 class="fw-bold text-primary">+50</h3>
-            <p>Platillos en el menú</p>
-          </div>
-          <div class="col-6 col-md-3">
-            <h3 class="fw-bold text-primary">+5000</h3>
-            <p>Clientes felices</p>
-          </div>
-          <div class="col-6 col-md-3">
-            <h3 class="fw-bold text-primary">100%</h3>
-            <p>Ingredientes frescos</p>
-          </div>
-        </div>
-
-        <div class="gallery row g-4 mt-5">
+        <div class="row">
           <div class="col-md-4">
-            <div class="img-box">
+            <div class="overlay-container">
               <img
                 src="../img/momento1.jpg"
-                class="img-fluid"
+                class="img-nosotros"
                 alt="Momento especial"
               />
-              <div class="overlay"><h5>Eventos Especiales</h5></div>
+              <div class="overlay">
+                <h3>Eventos Especiales</h3>
+              </div>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="img-box">
+            <div class="overlay-container">
               <img
-                src="../img/momento2.webp"
-                class="img-fluid"
+                src="../img/momento2.jpg"
+                class="img-nosotros"
                 alt="Reunión de amigos"
               />
-              <div class="overlay"><h5>Reuniones</h5></div>
+              <div class="overlay"><h3>Reuniones</h3></div>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="img-box">
+            <div class="overlay-container">
               <img
                 src="../img/momento3.jpg"
-                class="img-fluid"
+                class="img-nosotros"
                 alt="Ambiente acogedor"
               />
-              <div class="overlay"><h5>Ambiente Único</h5></div>
+              <div class="overlay"><h3>Ambiente Único</h3></div>
             </div>
           </div>
         </div>
@@ -173,9 +179,7 @@
 
     <footer>
       <div>
-        <p>
-          © 2025 Pausa y Café. Todos los derechos reservados.
-        </p>
+        <p>© 2025 Pausa y Café. Todos los derechos reservados.</p>
 
         <div class="redes-sociales">
           <a
@@ -210,7 +214,7 @@
           >
             <svg width="28" height="28" fill="#000" viewBox="0 0 24 24">
               <path
-                d="M20.77 3H17.6L12.9 9.2 8.3 3H2l7.8 10.4L2.6 21H5.8l4.9-6.5L16 21h6l-8.4-11.2L20.77 3Z"
+                d="M20.77 3H17.6L12.9 9.2 8.3 3H2l7.8 10.4L2.6 21h3.8l4.9-6.5L16 21h6l-8.4-11.2L20.77 3Z"
               />
             </svg>
           </a>
