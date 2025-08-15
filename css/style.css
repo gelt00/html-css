@@ -248,4 +248,46 @@ footer .redes-sociales a svg {
   border-color: #3019db;
 }
 
+.especialidades-categorias {
+  text-align: center;
+}
+.especialidades-categorias .especialidad-item {
+  height: 100%;
+  padding: 1.25rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.especialidades-categorias .especialidad-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.especialidades-categorias .especialidad-item:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.especialidades-categorias .especialidad-item i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 2px solid currentColor;
+  font-size: 2rem;
+  margin: 0 auto;
+}
+.especialidades-categorias .especialidad-item h5 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.25rem;
+  font-weight: 700;
+}
+.especialidades-categorias .especialidad-item p {
+  margin: 0;
+  color: #6c757d;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
 /*# sourceMappingURL=style.css.map */

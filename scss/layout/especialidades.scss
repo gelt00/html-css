@@ -1,0 +1,35 @@
+.especialidades-categorias {
+  text-align: center;
+
+  .especialidad-item {
+    height: 100%;
+    padding: 1.25rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+    @include levantar-hover(-4px, 0.2s);
+
+    i {
+      @include flex-center;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      border: 2px solid currentColor;
+      font-size: 2rem;
+      margin: 0 auto;
+    }
+
+    h5 {
+      margin-top: .75rem;
+      margin-bottom: .25rem;
+      font-weight: 700;
+    }
+
+    p {
+      margin: 0;
+      color: #6c757d;
+      font-size: .95rem;
+      line-height: 1.4;
+    }
+  }
+}
