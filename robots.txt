@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /css/
+Disallow: /scss/
+Allow: /
+
+Sitemap: https://curious-macaron-c78236.netlify.app/sitemap.xml

@@ -86,8 +86,8 @@ header .navbar {
   background-color: #2c3e50;
 }
 header .navbar .navbar-brand img {
-  width: 100px;
-  height: 100px;
+  width: clamp(64px, 12vw, 100px);
+  height: auto;
   object-fit: contain;
   display: block;
 }
@@ -163,6 +163,11 @@ footer .redes-sociales a svg {
   object-fit: cover;
   width: 100%;
 }
+@media (max-width: 576px) {
+  .menuCarouselClass .card-img-top {
+    height: 220px;
+  }
+}
 
 .img-nosotros {
   width: 100%;
@@ -199,18 +204,13 @@ footer .redes-sociales a svg {
   padding: 1rem;
   border-radius: 8px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 .stat-item:hover {
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-  will-change: transform;
-  height: 100%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-}
-.stat-item:hover:hover {
   transform: translateY(-8px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
-.stat-item:hover:active {
+.stat-item:active {
   transform: translateY(0);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }

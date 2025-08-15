@@ -4,8 +4,8 @@ header {
 
     .navbar-brand {
       img {
-        width: 100px;
-        height: 100px;
+        width: clamp(64px, 12vw, 100px);
+        height: auto;
         object-fit: contain;
         display: block;
       }
@@ -16,7 +16,6 @@ header {
       flex: 1;
       gap: $spacing-unit;
     }
-
 
     .nav-link {
       color: $text-color-white;
