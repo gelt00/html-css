@@ -252,6 +252,9 @@ footer .redes-sociales a svg {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 3rem;
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 1.5rem;
 }
 .especialidades-categorias .especialidad-item {
   height: 100%;
@@ -260,6 +263,7 @@ footer .redes-sociales a svg {
   border-radius: 12px;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  --icon-color: #0d6efd;
 }
 .especialidades-categorias .especialidad-item:hover {
   transform: translateY(-4px);
@@ -279,17 +283,29 @@ footer .redes-sociales a svg {
   border: 2px solid currentColor;
   font-size: 2rem;
   margin: 0 auto;
-}
-.especialidades-categorias .especialidad-item h5 {
-  margin-top: 0.75rem;
-  margin-bottom: 0.25rem;
-  font-weight: 700;
+  color: var(--icon-color);
 }
 .especialidades-categorias .especialidad-item p {
   margin: 0;
   color: #6c757d;
   font-size: 0.95rem;
   line-height: 1.4;
+}
+
+.especialidad-item.is-primary {
+  --icon-color: #0d6efd;
+}
+
+.especialidad-item.is-danger {
+  --icon-color: #dc3545;
+}
+
+.especialidad-item.is-success {
+  --icon-color: #198754;
+}
+
+.especialidad-item.is-warning {
+  --icon-color: #ffc107;
 }
 
 /*# sourceMappingURL=style.css.map */

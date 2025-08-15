@@ -1,5 +1,8 @@
 .especialidades-categorias {
   @include flex-center;
+    margin-top: 3rem;
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 1.5rem;
 
   .especialidad-item {
     height: 100%;
@@ -8,6 +11,7 @@
     border-radius: 12px;
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
     @include levantar-hover(-4px, 0.2s);
+    --icon-color: #0d6efd;
 
     i {
       @include flex-center;
@@ -17,12 +21,7 @@
       border: 2px solid currentColor;
       font-size: 2rem;
       margin: 0 auto;
-    }
-
-    h5 {
-      margin-top: .75rem;
-      margin-bottom: .25rem;
-      font-weight: 700;
+      color: var(--icon-color);
     }
 
     p {
@@ -33,3 +32,9 @@
     }
   }
 }
+
+
+.especialidad-item.is-primary { --icon-color: #0d6efd; }
+.especialidad-item.is-danger  { --icon-color: #dc3545; }
+.especialidad-item.is-success { --icon-color: #198754; }
+.especialidad-item.is-warning { --icon-color: #ffc107; }
