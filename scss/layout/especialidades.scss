@@ -1,5 +1,5 @@
 .especialidades-categorias {
-  text-align: center;
+  @include flex-center;
 
   .especialidad-item {
     height: 100%;

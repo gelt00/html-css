@@ -249,7 +249,9 @@ footer .redes-sociales a svg {
 }
 
 .especialidades-categorias {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .especialidades-categorias .especialidad-item {
   height: 100%;
