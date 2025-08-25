@@ -133,40 +133,27 @@ footer .redes-sociales a svg {
 }
 
 .menuCarouselClass .carousel-inner {
-  overflow: visible;
-}
-.menuCarouselClass .carousel-item {
   overflow: hidden;
 }
-.menuCarouselClass .carousel-item.active {
-  overflow: visible;
-}
-.menuCarouselClass .row {
-  align-items: stretch;
-}
-.menuCarouselClass .card {
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-  will-change: transform;
-  height: 100%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-}
-.menuCarouselClass .card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-.menuCarouselClass .card:active {
-  transform: translateY(0);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-}
-.menuCarouselClass .card-img-top {
+.menuCarouselClass .menu-slide-img {
   height: 350px;
-  object-fit: cover;
   width: 100%;
+  object-fit: cover;
+  display: block;
 }
 @media (max-width: 576px) {
-  .menuCarouselClass .card-img-top {
+  .menuCarouselClass .menu-slide-img {
     height: 220px;
   }
+}
+.menuCarouselClass .carousel-caption {
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0));
+  border-radius: 0.5rem;
+  padding-bottom: 1.25rem;
+}
+.menuCarouselClass .carousel-control-prev, .menuCarouselClass .carousel-control-next {
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.4));
 }
 
 .img-nosotros {
@@ -246,6 +233,35 @@ footer .redes-sociales a svg {
 .form-contacto .form-control:focus {
   box-shadow: 0 0 0 0.2rem rgba(48, 25, 219, 0.25);
   border-color: #3019db;
+}
+
+.slider-especialidades .carousel-inner {
+  overflow: hidden;
+}
+.slider-especialidades .slide-img {
+  height: 360px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+@media (max-width: 576px) {
+  .slider-especialidades .slide-img {
+    height: 230px;
+  }
+}
+.slider-especialidades .carousel-caption {
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0));
+  border-radius: 0.5rem;
+  padding-bottom: 1.2rem;
+}
+.slider-especialidades .carousel-control-prev, .slider-especialidades .carousel-control-next {
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.45));
+}
+@media (prefers-reduced-motion: reduce) {
+  .slider-especialidades .carousel-item {
+    transition: none;
+  }
 }
 
 .especialidades-categorias {

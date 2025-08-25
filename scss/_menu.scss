@@ -1,29 +1,26 @@
-
 @use './mixins' as m;
 
 .menuCarouselClass {
-  .carousel-inner { overflow: visible; }
-  .carousel-item { overflow: hidden; }
-  .carousel-item.active { overflow: visible; }
+  .carousel-inner { overflow: hidden; }
 
-  .row {
-    align-items: stretch;
-  }  
-
-  .card {
-    @include m.levantar-hover(-10px, 0.25s);
-    will-change: transform;
-    height: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-  }
-
-  .card-img-top {
+  .menu-slide-img {
     height: 350px;
-    object-fit: cover;
     width: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  @media (max-width: 576px) {
+    .menu-slide-img { height: 220px; }
   }
 
-    @media (max-width: 576px) {
-    .card-img-top { height: 220px; }
+  .carousel-caption {
+    text-shadow: 0 2px 8px rgba(0,0,0,.6);
+    background: linear-gradient(to top, rgba(0,0,0,.35), rgba(0,0,0,0));
+    border-radius: .5rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .carousel-control-prev, .carousel-control-next {
+    filter: drop-shadow(0 2px 6px rgba(0,0,0,.4));
   }
 }

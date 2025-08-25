@@ -22,15 +22,20 @@
     <link rel="icon" href="../img/favicon.ico" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menú | Pausa y Café</title>
-    <meta name="description" content="Descubre nuestro menú variado con opciones para todos los gustos: desde cafés especiales hasta deliciosos postres y snacks.">
-
+    <meta
+      name="description"
+      content="Descubre nuestro menú variado con opciones para todos los gustos: desde cafés especiales hasta deliciosos postres y snacks."
+    />
   </head>
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
           <a class="navbar-brand animate__animated animate__pulse" href="#">
-            <img src="../img/logo.png" alt="Logo de Pausa y Café, cafetería artesanal" />
+            <img
+              src="../img/logo.png"
+              alt="Logo de Pausa y Café, cafetería artesanal"
+            />
           </a>
 
           <button
@@ -76,147 +81,127 @@
           <h2>Nuestro Menú</h2>
           <p>Explora todas las opciones que ofrecemos</p>
 
-          <!-- Carrusel -->
           <div
             id="menuCarousel"
             class="carousel slide menuCarouselClass"
             data-bs-ride="carousel"
+            data-bs-interval="10000"
           >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#menuCarousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Hotcakes gourmet en Pausa y Café"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#menuCarousel"
+                data-bs-slide-to="1"
+                aria-label="Sándwich clásico de jamón, tocino y queso artesanal"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#menuCarousel"
+                data-bs-slide-to="2"
+                aria-label="Helados artesanales con frutas frescas de temporada"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#menuCarousel"
+                data-bs-slide-to="3"
+                aria-label="Café negro acompañado de rebanada de pastel casero"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#menuCarousel"
+                data-bs-slide-to="4"
+                aria-label="Pollo asado con guarniciones tropicales y ensalada"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#menuCarousel"
+                data-bs-slide-to="5"
+                aria-label="Desayuno mexicano tradicional con café de olla"
+              ></button>
+            </div>
+
             <div class="carousel-inner">
-              <!-- Primer slide -->
               <div class="carousel-item active">
-                <div class="row">
-                  <div class="col-sm-6 col-md-4">
-                    <div class="card">
-                      <img
-                        src="../img/platillo1.webp"
-                        class="card-img-top"
-                        alt="Hotcakes gourmet con café latte en Pausa y Café"
-                      />
-                      <div class="card-body">
-                        <h4 class="card-title">
-                          Hotcakes Gourmet con Café Latte
-                        </h4>
-                        <p class="card-text">
-                          Esponjosos hotcakes de cacao acompañados de nueces
-                          caramelizadas y una bola de helado artesanal, servidos
-                          con un cremoso café latte decorado con arte de leche.
-                          Una combinación perfecta para comenzar el día con
-                          energía.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-6 col-md-4">
-                    <div class="card">
-                      <img
-                        src="../img/plato2.jpg"
-                        class="card-img-top"
-                        alt="Sándwich clásico de jamón y queso artesanal"
-                      />
-                      <div class="card-body">
-                        <h4 class="card-title">
-                          Sándwich Clásico de Jamón y Queso
-                        </h4>
-                        <p class="card-text">
-                          Un sándwich artesanal con pan suave, jamón ahumado,
-                          queso fresco y lechuga crujiente. Ideal para un
-                          almuerzo ligero, nutritivo y lleno de sabor.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-6 col-md-4">
-                    <div class="card">
-                      <img
-                        src="../img/plato3.jpg"
-                        class="card-img-top"
-                        alt="Helados artesanales con frutas frescas de temporada"
-                      />
-                      <div class="card-body">
-                        <h4 class="card-title">
-                          Helados Artesanales con Frutas Frescas
-                        </h4>
-                        <p class="card-text">
-                          Coloridos helados artesanales servidos en crujientes
-                          conos, acompañados de frutas frescas de temporada. Una
-                          explosión de sabor y frescura ideal para disfrutar en
-                          cualquier momento del día.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+                <img
+                  src="../img/plato1.jpg"
+                  class="d-block w-100 menu-slide-img"
+                  alt="Hotcakes gourmet en Pausa y Café"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Hotcakes Gourmet</h5>
+                  <p>
+                    Esponjosos hotcakes con compota de frutos rojos.
+                  </p>
                 </div>
               </div>
 
-              <!-- Segundo slide -->
               <div class="carousel-item">
-                <div class="row">
-                  <div class="col-sm-6 col-md-4">
-                    <div class="card">
-                      <img
-                        src="../img/plato4.jpg"
-                        class="card-img-top"
-                        alt="Café negro acompañado de rebanada de pastel casero"
-                      />
-                      <div class="card-body">
-                        <h4 class="card-title">
-                          Café Negro con Rebanada de Pastel
-                        </h4>
-                        <p class="card-text">
-                          Una combinación clásica: café negro de aroma intenso
-                          acompañado de una rebanada de pastel con glaseado
-                          artesanal. El equilibrio ideal entre lo dulce y lo
-                          amargo para una pausa deliciosa.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+                <img
+                  src="../img/plato2.jpg"
+                  class="d-block w-100 menu-slide-img"
+                  alt="Sándwich clásico de jamón, tocino y queso artesanal"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Sándwich Clásico de Jamón, Tocino y Queso</h5>
+                  <p>
+                    Pan suave, jamón y tocino ahumado, queso fresco y lechuga crujiente.
+                  </p>
+                </div>
+              </div>
 
-                  <div class="col-sm-6 col-md-4">
-                    <div class="card">
-                      <img
-                        src="../img/plato5.jpg"
-                        class="card-img-top"
-                        alt="Pollo asado con guarniciones tropicales y ensalada"
-                      />
-                      <div class="card-body">
-                        <h4 class="card-title">
-                          Pollo Asado con Guarniciones Tropicales
-                        </h4>
-                        <p class="card-text">
-                          Jugoso pollo asado acompañado de arroz blanco,
-                          frijoles negros, plátanos maduros fritos, yuca dorada
-                          y una fresca ensalada de la casa. Un plato balanceado
-                          que combina tradición y sabor.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+              <div class="carousel-item">
+                <img
+                  src="../img/plato3.jpg"
+                  class="d-block w-100 menu-slide-img"
+                  alt="Helados artesanales con frutas frescas de temporada"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Helados Artesanales</h5>
+                  <p>Conos crujientes con frutas frescas de temporada.</p>
+                </div>
+              </div>
 
-                  <div class="col-sm-6 col-md-4">
-                    <div class="card">
-                      <img
-                        src="../img/plato6.jpg"
-                        class="card-img-top"
-                        alt="Desayuno mexicano tradicional con café de olla"
-                      />
-                      <div class="card-body">
-                        <h4 class="card-title">
-                          Desayuno Mexicano Tradicional
-                        </h4>
-                        <p class="card-text">
-                          Huevos estrellados servidos con chilaquiles verdes
-                          bañados en crema y cebolla morada, frijoles refritos
-                          con queso fresco y un guiso de carne casero.
-                          Acompañado de tortillas de maíz y café de olla para
-                          empezar el día con energía.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+              <div class="carousel-item">
+                <img
+                  src="../img/plato4.jpg"
+                  class="d-block w-100 menu-slide-img"
+                  alt="Café negro acompañado de rebanada de pastel casero"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Café Negro con Pastel</h5>
+                  <p>Clásico balance entre lo dulce y lo amargo.</p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img
+                  src="../img/plato5.jpg"
+                  class="d-block w-100 menu-slide-img"
+                  alt="Pollo asado con guarniciones tropicales y ensalada"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Pollo Asado con Guarniciones</h5>
+                  <p>Arroz, frijoles, plátano, yuca y ensalada.</p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img
+                  src="../img/plato6.jpg"
+                  class="d-block w-100 menu-slide-img"
+                  alt="Desayuno mexicano tradicional con café de olla"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Desayuno Mexicano Tradicional</h5>
+                  <p>Chilaquiles, huevos, frijoles y café de olla.</p>
                 </div>
               </div>
             </div>
@@ -233,7 +218,6 @@
                 class="carousel-control-prev-icon"
                 aria-hidden="true"
               ></span>
-              <span class="visually-hidden">Anterior</span>
             </button>
             <button
               class="carousel-control-next"
@@ -246,12 +230,16 @@
                 class="carousel-control-next-icon"
                 aria-hidden="true"
               ></span>
-              <span class="visually-hidden">Siguiente</span>
             </button>
           </div>
 
           <div>
-            <a class="boton" href="../sources/menu.pdf" download aria-label="Descargar menú completo en PDF de Pausa y Café">
+            <a
+              class="boton"
+              href="../sources/menu.pdf"
+              download
+              aria-label="Descargar menú completo en PDF de Pausa y Café"
+            >
               <span class="me-2">📄</span> Descargar Menú PDF
             </a>
           </div>
