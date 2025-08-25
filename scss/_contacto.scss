@@ -1,4 +1,4 @@
-@use './mixins' as m;
+@use './variables' as v;
 
 
 .contacto-info {
@@ -28,7 +28,7 @@
   background-color: white;
   border-radius: 0.25rem;
   box-shadow: 0 .125rem .25rem rgba(0, 0, 0, 0.075);
-  padding: m.$spacing-unit * 1.5;
+  padding: v.$spacing-unit * 1.5;
 
   .form-control:focus {
     box-shadow: 0 0 0 0.2rem rgba(48, 25, 219, 0.25);

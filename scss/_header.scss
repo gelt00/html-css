@@ -17,7 +17,7 @@ header {
     .navbar-nav {
       @include m.flex-center;
       flex: 1;
-      gap: m.$spacing-unit;
+      gap: v.$spacing-unit;
     }
 
     .nav-link {

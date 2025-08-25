@@ -1,7 +1,7 @@
 @use './mixins' as m;
 
 .especialidades-categorias {
-  @include flex-center;
+  @include m.flex-center;
     margin-top: 3rem;
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 1.5rem;

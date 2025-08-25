@@ -1,3 +1,4 @@
+@use 'sass:math';
 @use './variables' as v;
 @use './mixins' as m;
 
@@ -45,12 +46,12 @@ h1 {
 
 h2 {
   margin-top: v.$spacing-unit;
-  margin-bottom: v.$spacing-unit / 2;
+  margin-bottom: math.div(v.$spacing-unit, 2);
 }
 
 h3 {
-  margin-top: v.$spacing-unit / 2;
-  margin-bottom: v.$spacing-unit / 4;
+  margin-top: math.div(v.$spacing-unit, 2);
+  margin-bottom: math.div(v.$spacing-unit, 4);
   font-size: 1.25rem;
 }
 
