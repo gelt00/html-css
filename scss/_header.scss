@@ -11,6 +11,11 @@ header {
         height: auto;
         object-fit: contain;
         display: block;
+        transition: transform 0.3s ease;
+        
+        &:hover {
+          transform: scale(1.05);
+        }
       }
     }
 
@@ -23,9 +28,34 @@ header {
     .nav-link {
       color: v.$text-color-white;
       font-weight: 450;
+      position: relative;
+      transition: color 0.3s ease, transform 0.2s ease;
+      
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: v.$secondary-color;
+        transition: width 0.3s ease;
+      }
+      
       &:hover,
       &.active {
         color: v.$secondary-color;
+        transform: translateY(-2px);
+        
+        &::after {
+          width: 100%;
+        }
+      }
+      
+      &.active {
+        &::after {
+          width: 100%;
+        }
       }
     }
   }

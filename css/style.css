@@ -90,6 +90,10 @@ header .navbar .navbar-brand img {
   height: auto;
   object-fit: contain;
   display: block;
+  transition: transform 0.3s ease;
+}
+header .navbar .navbar-brand img:hover {
+  transform: scale(1.05);
 }
 header .navbar .navbar-nav {
   display: flex;
@@ -101,9 +105,28 @@ header .navbar .navbar-nav {
 header .navbar .nav-link {
   color: #ffffff;
   font-weight: 450;
+  position: relative;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+header .navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #18bc9c;
+  transition: width 0.3s ease;
 }
 header .navbar .nav-link:hover, header .navbar .nav-link.active {
   color: #18bc9c;
+  transform: translateY(-2px);
+}
+header .navbar .nav-link:hover::after, header .navbar .nav-link.active::after {
+  width: 100%;
+}
+header .navbar .nav-link.active::after {
+  width: 100%;
 }
 
 footer {
