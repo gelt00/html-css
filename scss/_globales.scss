@@ -1,10 +1,13 @@
+@use './variables' as v;
+@use './mixins' as m;
+
 .seccion {
-  @include flex-center;
+  @include m.flex-center;
   text-align: center;
   flex-direction: column;
-  padding: $spacing-unit;
-  padding-bottom: $spacing-unit * 2;
-  gap: $spacing-unit;
+  padding: v.$spacing-unit;
+  padding-bottom: v.$spacing-unit * 2;
+  gap: v.$spacing-unit;
 
   img {
     max-width: 100%;
@@ -13,8 +16,8 @@
   }
 
    blockquote {
-    background: $bg-color;
-    padding: $spacing-unit * 1.5;
+    background: v.$bg-color;
+    padding: v.$spacing-unit * 1.5;
     border-left: 5px solid #3019db;
     border-radius: 8px;
     font-style: italic;
@@ -35,31 +38,31 @@
 }
 
 h1 {
-  margin-top: $spacing-unit * 2;
-  margin-bottom: $spacing-unit;
+  margin-top: v.$spacing-unit * 2;
+  margin-bottom: v.$spacing-unit;
   font-weight: 700;
 }
 
 h2 {
-  margin-top: $spacing-unit;
-  margin-bottom: $spacing-unit / 2;
+  margin-top: v.$spacing-unit;
+  margin-bottom: v.$spacing-unit / 2;
 }
 
 h3 {
-  margin-top: $spacing-unit / 2;
-  margin-bottom: $spacing-unit / 4;
+  margin-top: v.$spacing-unit / 2;
+  margin-bottom: v.$spacing-unit / 4;
   font-size: 1.25rem;
 }
 
 .boton {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  margin-top: $spacing-unit;
-  background-color: $boton-color;
-  color: $text-color-white;
+  margin-top: v.$spacing-unit;
+  background-color: v.$boton-color;
+  color: v.$text-color-white;
   font-weight: 600;
   text-decoration: none;
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-  @include levantar-hover(-3px, 0.25s);
+  @include m.levantar-hover(-3px, 0.25s);
 }

@@ -1,3 +1,6 @@
+@use './variables' as v;
+@use './mixins' as m;
+
 .img-nosotros {
   width: 100%;
   height: auto;
@@ -16,13 +19,13 @@
 
 .overlay {
   position: absolute;
-  @include flex-center;
+  @include m.flex-center;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  color: $text-color-white;
+  color: v.$text-color-white;
   opacity: 0;
   transition: opacity 0.3s ease;
   border-radius: 12px;
@@ -33,5 +36,5 @@
   padding: 1rem;
   border-radius: 8px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  @include levantar-hover(-8px, 0.25s);
+  @include m.levantar-hover(-8px, 0.25s);
 }

@@ -1,3 +1,6 @@
+@use './mixins' as m;
+
+
 .contacto-info {
   display: flex;
   justify-content: center;
@@ -25,7 +28,7 @@
   background-color: white;
   border-radius: 0.25rem;
   box-shadow: 0 .125rem .25rem rgba(0, 0, 0, 0.075);
-  padding: $spacing-unit * 1.5;
+  padding: m.$spacing-unit * 1.5;
 
   .form-control:focus {
     box-shadow: 0 0 0 0.2rem rgba(48, 25, 219, 0.25);

@@ -1,3 +1,5 @@
+@use './mixins' as m;
+
 .especialidades-categorias {
   @include flex-center;
     margin-top: 3rem;
@@ -10,11 +12,11 @@
     background: white;
     border-radius: 12px;
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
-    @include levantar-hover(-4px, 0.2s);
+    @include m.levantar-hover(-4px, 0.2s);
     --icon-color: #0d6efd;
 
     i {
-      @include flex-center;
+      @include m.flex-center;
       width: 64px;
       height: 64px;
       border-radius: 50%;

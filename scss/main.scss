@@ -1,12 +1,11 @@
-@import 'base/variables';
-@import 'base/mixins';
-@import 'base/reset';
-@import 'base/globales';
-@import 'layout/header';
-@import 'layout/footer';
-
-@import 'layout/menu';
-@import 'layout/nosotros';
-@import 'layout/contacto';
-@import 'layout/especialidades';
-
+@use 'sass:math';
+@use 'variables';
+@use 'mixins';
+@use 'reset';
+@use 'globales';
+@use 'header';
+@use 'footer';
+@use 'menu';
+@use 'nosotros';
+@use 'contacto';
+@use 'especialidades';

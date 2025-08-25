@@ -1,3 +1,6 @@
+
+@use './mixins' as m;
+
 .menuCarouselClass {
   .carousel-inner { overflow: visible; }
   .carousel-item { overflow: hidden; }
@@ -8,7 +11,7 @@
   }  
 
   .card {
-    @include levantar-hover(-10px, 0.25s);
+    @include m.levantar-hover(-10px, 0.25s);
     will-change: transform;
     height: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);

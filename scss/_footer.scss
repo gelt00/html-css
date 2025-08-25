@@ -1,0 +1,28 @@
+@use './variables' as v;
+@use './mixins' as m;
+
+footer {
+  background-color: v.$primary-color;
+  color: v.$text-color-white;
+  text-align: center;
+  padding: v.$spacing-unit;
+
+  .redes-sociales {
+    margin-top: v.$spacing-unit;
+    @include m.flex-center;
+    gap: v.$spacing-unit;
+
+    a {
+      @include m.flex-center;
+      transition: transform 0.2s ease;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+
+      svg {
+        display: block;
+      }
+    }
+  }
+}

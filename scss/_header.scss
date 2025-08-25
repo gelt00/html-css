@@ -1,6 +1,9 @@
+@use './variables' as v;
+@use './mixins' as m;
+
 header {
   .navbar {
-    background-color: $primary-color;
+    background-color: v.$primary-color;
 
     .navbar-brand {
       img {
@@ -12,17 +15,17 @@ header {
     }
 
     .navbar-nav {
-      @include flex-center;
+      @include m.flex-center;
       flex: 1;
-      gap: $spacing-unit;
+      gap: m.$spacing-unit;
     }
 
     .nav-link {
-      color: $text-color-white;
+      color: v.$text-color-white;
       font-weight: 450;
       &:hover,
       &.active {
-        color: $secondary-color;
+        color: v.$secondary-color;
       }
     }
   }
